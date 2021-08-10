@@ -1,0 +1,10 @@
+{
+	"name": "ADFDemo1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://entitlementspoc.dfs.core.windows.net"
+		}
+	}
+}
