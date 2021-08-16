@@ -1,0 +1,9 @@
+{
+	"name": "KeithTADFPOC",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "6d20cbaa-a41d-44d4-b4d9-836da24ba48d",
+		"tenantId": "d4093791-9818-48dc-8880-35d134b8c79d"
+	}
+}
