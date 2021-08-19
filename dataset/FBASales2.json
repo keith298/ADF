@@ -1,0 +1,217 @@
+{
+	"name": "FBASales2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADFDemo1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "FBA-orders.csv",
+				"folderPath": "Input",
+				"fileSystem": "adf-poc"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "amazon-order-id",
+				"type": "String"
+			},
+			{
+				"name": "merchant-order-id",
+				"type": "String"
+			},
+			{
+				"name": "shipment-id",
+				"type": "String"
+			},
+			{
+				"name": "shipment-item-id",
+				"type": "String"
+			},
+			{
+				"name": "amazon-order-item-id",
+				"type": "String"
+			},
+			{
+				"name": "merchant-order-item-id",
+				"type": "String"
+			},
+			{
+				"name": "purchase-date",
+				"type": "String"
+			},
+			{
+				"name": "payments-date",
+				"type": "String"
+			},
+			{
+				"name": "shipment-date",
+				"type": "String"
+			},
+			{
+				"name": "reporting-date",
+				"type": "String"
+			},
+			{
+				"name": "buyer-email",
+				"type": "String"
+			},
+			{
+				"name": "buyer-name",
+				"type": "String"
+			},
+			{
+				"name": "buyer-phone-number",
+				"type": "String"
+			},
+			{
+				"name": "sku",
+				"type": "String"
+			},
+			{
+				"name": "product-name",
+				"type": "String"
+			},
+			{
+				"name": "quantity-shipped",
+				"type": "String"
+			},
+			{
+				"name": "currency",
+				"type": "String"
+			},
+			{
+				"name": "item-price",
+				"type": "String"
+			},
+			{
+				"name": "item-tax",
+				"type": "String"
+			},
+			{
+				"name": "shipping-price",
+				"type": "String"
+			},
+			{
+				"name": "shipping-tax",
+				"type": "String"
+			},
+			{
+				"name": "gift-wrap-price",
+				"type": "String"
+			},
+			{
+				"name": "gift-wrap-tax",
+				"type": "String"
+			},
+			{
+				"name": "ship-service-level",
+				"type": "String"
+			},
+			{
+				"name": "recipient-name",
+				"type": "String"
+			},
+			{
+				"name": "ship-address-1",
+				"type": "String"
+			},
+			{
+				"name": "ship-address-2",
+				"type": "String"
+			},
+			{
+				"name": "ship-address-3",
+				"type": "String"
+			},
+			{
+				"name": "ship-city",
+				"type": "String"
+			},
+			{
+				"name": "ship-state",
+				"type": "String"
+			},
+			{
+				"name": "ship-postal-code",
+				"type": "String"
+			},
+			{
+				"name": "ship-country",
+				"type": "String"
+			},
+			{
+				"name": "ship-phone-number",
+				"type": "String"
+			},
+			{
+				"name": "bill-address-1",
+				"type": "String"
+			},
+			{
+				"name": "bill-address-2",
+				"type": "String"
+			},
+			{
+				"name": "bill-address-3",
+				"type": "String"
+			},
+			{
+				"name": "bill-city",
+				"type": "String"
+			},
+			{
+				"name": "bill-state",
+				"type": "String"
+			},
+			{
+				"name": "bill-postal-code",
+				"type": "String"
+			},
+			{
+				"name": "bill-country",
+				"type": "String"
+			},
+			{
+				"name": "item-promotion-discount",
+				"type": "String"
+			},
+			{
+				"name": "ship-promotion-discount",
+				"type": "String"
+			},
+			{
+				"name": "carrier",
+				"type": "String"
+			},
+			{
+				"name": "tracking-number",
+				"type": "String"
+			},
+			{
+				"name": "estimated-arrival-date",
+				"type": "String"
+			},
+			{
+				"name": "fulfillment-center-id",
+				"type": "String"
+			},
+			{
+				"name": "fulfillment-channel",
+				"type": "String"
+			},
+			{
+				"name": "sales-channel",
+				"type": "String"
+			}
+		]
+	}
+}
