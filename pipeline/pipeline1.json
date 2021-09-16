@@ -34,7 +34,7 @@
 							{
 								"name": "dayofyear",
 								"value": {
-									"value": "pipeline1.order-date",
+									"value": "@pipeline1.order-date",
 									"type": "Expression"
 								}
 							}
