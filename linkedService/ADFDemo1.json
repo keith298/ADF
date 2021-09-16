@@ -6,10 +6,7 @@
 		"type": "AzureBlobFS",
 		"typeProperties": {
 			"url": "https://entitlementspoc.dfs.core.windows.net",
-			"tenant": "66c90785-23c4-4308-946f-cf47627db5f9",
-			"servicePrincipalId": "c28980cb-9bd2-423f-a070-4a698fb6df03",
-			"servicePrincipalCredentialType": "ServicePrincipalKey",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIktULUFERl8yYzNiMWQ3OC1mYzA2LTQyMDItODdmYy0wODYzNTY0ZDhkYzMiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIktULUFERl83MzQ1MWU5OS03OTYwLTRiMmItYTgxMS04NjgxMzE3ZmYyYTMiDQp9"
 		}
 	}
 }
