@@ -41,6 +41,10 @@
 					},
 					"sink": {
 						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings",
+							"copyBehavior": "MergeFiles"
+						},
 						"formatSettings": {
 							"type": "ParquetWriteSettings"
 						}
@@ -55,7 +59,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "ParquetResults1",
+						"referenceName": "Parquet1",
 						"type": "DatasetReference"
 					}
 				]
