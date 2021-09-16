@@ -14,7 +14,7 @@
 			],
 			"sinks": [],
 			"transformations": [],
-			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'parquet') ~> parquet2"
+			"script": "source(output(\n\t\t{order-id} as string,\n\t\t{order-item-id} as string,\n\t\t{purchase-date} as string,\n\t\t{payments-date} as string,\n\t\tsku as string,\n\t\t{number-of-items} as string,\n\t\t{product-name} as string,\n\t\t{quantity-purchased} as string,\n\t\tcurrency as string,\n\t\t{item-price} as string,\n\t\t{item-tax} as string,\n\t\t{shipping-price} as string,\n\t\t{shipping-tax} as string,\n\t\t{ship-service-level} as string,\n\t\t{ship-service-name} as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'parquet') ~> parquet2"
 		}
 	}
 }
