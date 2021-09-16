@@ -1,0 +1,9 @@
+{
+	"name": "KT-ADF-StorageKey",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d62b8f42-30f1-4c3e-a6e8-44a4cd5e2400",
+		"tenantId": "66c90785-23c4-4308-946f-cf47627db5f9"
+	}
+}
