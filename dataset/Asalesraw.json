@@ -1,0 +1,285 @@
+{
+	"name": "Asalesraw",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "salesData.txt",
+				"folderPath": "Input",
+				"fileSystem": "adf"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "order-id",
+				"type": "String"
+			},
+			{
+				"name": "order-item-id",
+				"type": "String"
+			},
+			{
+				"name": "purchase-date",
+				"type": "String"
+			},
+			{
+				"name": "payments-date",
+				"type": "String"
+			},
+			{
+				"name": "buyer-email",
+				"type": "String"
+			},
+			{
+				"name": "buyer-name",
+				"type": "String"
+			},
+			{
+				"name": "payment-method-details",
+				"type": "String"
+			},
+			{
+				"name": "buyer-phone-number",
+				"type": "String"
+			},
+			{
+				"name": "sku",
+				"type": "String"
+			},
+			{
+				"name": "number-of-items",
+				"type": "String"
+			},
+			{
+				"name": "product-name",
+				"type": "String"
+			},
+			{
+				"name": "quantity-purchased",
+				"type": "String"
+			},
+			{
+				"name": "currency",
+				"type": "String"
+			},
+			{
+				"name": "item-price",
+				"type": "String"
+			},
+			{
+				"name": "item-tax",
+				"type": "String"
+			},
+			{
+				"name": "shipping-price",
+				"type": "String"
+			},
+			{
+				"name": "shipping-tax",
+				"type": "String"
+			},
+			{
+				"name": "ship-service-level",
+				"type": "String"
+			},
+			{
+				"name": "ship-service-name",
+				"type": "String"
+			},
+			{
+				"name": "recipient-name",
+				"type": "String"
+			},
+			{
+				"name": "ship-address-1",
+				"type": "String"
+			},
+			{
+				"name": "ship-address-2",
+				"type": "String"
+			},
+			{
+				"name": "ship-address-3",
+				"type": "String"
+			},
+			{
+				"name": "address-type",
+				"type": "String"
+			},
+			{
+				"name": "ship-city",
+				"type": "String"
+			},
+			{
+				"name": "ship-state",
+				"type": "String"
+			},
+			{
+				"name": "ship-postal-code",
+				"type": "String"
+			},
+			{
+				"name": "ship-country",
+				"type": "String"
+			},
+			{
+				"name": "ship-phone-number",
+				"type": "String"
+			},
+			{
+				"name": "item-promotion-discount",
+				"type": "String"
+			},
+			{
+				"name": "item-promotion-id",
+				"type": "String"
+			},
+			{
+				"name": "ship-promotion-discount",
+				"type": "String"
+			},
+			{
+				"name": "ship-promotion-id",
+				"type": "String"
+			},
+			{
+				"name": "delivery-start-date",
+				"type": "String"
+			},
+			{
+				"name": "delivery-end-date",
+				"type": "String"
+			},
+			{
+				"name": "delivery-time-zone",
+				"type": "String"
+			},
+			{
+				"name": "delivery-Instructions",
+				"type": "String"
+			},
+			{
+				"name": "order-channel",
+				"type": "String"
+			},
+			{
+				"name": "order-channel-instance",
+				"type": "String"
+			},
+			{
+				"name": "external-order-id",
+				"type": "String"
+			},
+			{
+				"name": "payment-method",
+				"type": "String"
+			},
+			{
+				"name": "cod-collectible-amount",
+				"type": "String"
+			},
+			{
+				"name": "already-paid",
+				"type": "String"
+			},
+			{
+				"name": "payment-method-fee",
+				"type": "String"
+			},
+			{
+				"name": "purchase-order-number",
+				"type": "String"
+			},
+			{
+				"name": "is-prime",
+				"type": "String"
+			},
+			{
+				"name": "is-premium-order",
+				"type": "String"
+			},
+			{
+				"name": "tax-collection-model",
+				"type": "String"
+			},
+			{
+				"name": "tax-collection-responsible-party",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-address-name",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-address-field-1",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-address-field-2",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-address-field-3",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-city",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-state",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-country",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-postal-code",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-address-name",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-address-field-1",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-address-field-2",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-address-field-3",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-city",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-state",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-country",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-postal-code",
+				"type": "String"
+			}
+		]
+	}
+}
