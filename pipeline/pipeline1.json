@@ -30,15 +30,6 @@
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
-						"additionalColumns": [
-							{
-								"name": "dayOfYear",
-								"value": {
-									"value": "@pipeline.purchase-date",
-									"type": "Expression"
-								}
-							}
-						],
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
@@ -58,7 +49,162 @@
 							"type": "ParquetWriteSettings"
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "order-id",
+									"type": "String"
+								},
+								"sink": {
+									"name": "order-id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "order-item-id",
+									"type": "String"
+								},
+								"sink": {
+									"name": "order-item-id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "purchase-date",
+									"type": "String"
+								},
+								"sink": {
+									"name": "purchase-date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "payments-date",
+									"type": "String"
+								},
+								"sink": {
+									"name": "payments-date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "sku",
+									"type": "String"
+								},
+								"sink": {
+									"name": "sku",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "number-of-items",
+									"type": "String"
+								},
+								"sink": {
+									"name": "number-of-items",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "product-name",
+									"type": "String"
+								},
+								"sink": {
+									"name": "product-name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "quantity-purchased",
+									"type": "String"
+								},
+								"sink": {
+									"name": "quantity-purchased",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "currency",
+									"type": "String"
+								},
+								"sink": {
+									"name": "currency",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "item-price",
+									"type": "String"
+								},
+								"sink": {
+									"name": "item-price",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "item-tax",
+									"type": "String"
+								},
+								"sink": {
+									"name": "item-tax",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "shipping-price",
+									"type": "String"
+								},
+								"sink": {
+									"name": "shipping-price",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "shipping-tax",
+									"type": "String"
+								},
+								"sink": {
+									"name": "shipping-tax",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ship-service-level",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ship-service-level",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ship-service-name",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ship-service-name",
+									"type": "String"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
