@@ -146,7 +146,7 @@
 							{
 								"source": {
 									"name": "item-price",
-									"type": "Decimal"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "item-price",
@@ -166,7 +166,7 @@
 							{
 								"source": {
 									"name": "shipping-price",
-									"type": "Decimal"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "shipping-price",
