@@ -16,6 +16,67 @@
 			},
 			"compressionCodec": "snappy"
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "order-id",
+				"type": "UTF8"
+			},
+			{
+				"name": "order-item-id",
+				"type": "UTF8"
+			},
+			{
+				"name": "purchase-date",
+				"type": "UTF8"
+			},
+			{
+				"name": "payments-date",
+				"type": "UTF8"
+			},
+			{
+				"name": "sku",
+				"type": "UTF8"
+			},
+			{
+				"name": "number-of-items",
+				"type": "UTF8"
+			},
+			{
+				"name": "product-name",
+				"type": "UTF8"
+			},
+			{
+				"name": "quantity-purchased",
+				"type": "UTF8"
+			},
+			{
+				"name": "currency",
+				"type": "UTF8"
+			},
+			{
+				"name": "item-price",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "item-tax",
+				"type": "UTF8"
+			},
+			{
+				"name": "shipping-price",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "shipping-tax",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-service-level",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-service-name",
+				"type": "UTF8"
+			}
+		]
 	}
 }
