@@ -1,0 +1,19 @@
+{
+	"name": "powerquery1",
+	"properties": {
+		"type": "WranglingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "Parquet1",
+					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'parquet') ~>  Parquet1",
+					"dataset": {
+						"referenceName": "Parquet1",
+						"type": "DatasetReference"
+					}
+				}
+			],
+			"script": "section Section1;\r\nshared Parquet1 = let\r\n  AdfDoc = AzureStorage.DataLakeContents(\"https://testv2storage.dfs.core.windows.net/adf/Output/results\"),\r\n  Parquet = Parquet.Document(AdfDoc)\r\nin\r\n  Parquet;\r\nshared UserQuery = let\r\n  Source = Parquet1\r\nin\r\n  Source;\r\n"
+		}
+	}
+}
