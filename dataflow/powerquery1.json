@@ -13,7 +13,7 @@
 					}
 				}
 			],
-			"script": "section Section1;\r\nshared Parquet1 = let\r\n  AdfDoc = AzureStorage.DataLakeContents(\"https://testv2storage.dfs.core.windows.net/adf/Output/results\"),\r\n  Parquet = Parquet.Document(AdfDoc)\r\nin\r\n  Parquet;\r\nshared UserQuery = let\r\n  Source = Parquet1\r\nin\r\n  Source;\r\n"
+			"script": "section Section1;\r\nshared Parquet1 = let\r\n  AdfDoc = AzureStorage.DataLakeContents(\"https://testv2storage.dfs.core.windows.net/adf/Output/results\"),\r\n  Parquet = Parquet.Document(AdfDoc)\r\nin\r\n  Parquet;\r\nshared UserQuery = let\r\n  Source = Parquet1,\r\n  #\"Removed duplicates\" = Table.Distinct(Source, {\"order-id\"}),\r\n  #\"Grouped rows\" = Table.Group(#\"Removed duplicates\", {\"purchase-date\"}, {{\"dailySales\", each List.Sum([#\"item-price\"]), type nullable number}})\r\nin\r\n  #\"Grouped rows\";\r\n"
 		}
 	}
 }
