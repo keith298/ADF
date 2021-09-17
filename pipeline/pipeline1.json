@@ -146,7 +146,7 @@
 							{
 								"source": {
 									"name": "item-price",
-									"type": "Int32"
+									"type": "Double"
 								},
 								"sink": {
 									"name": "item-price",
@@ -166,7 +166,7 @@
 							{
 								"source": {
 									"name": "shipping-price",
-									"type": "Int32"
+									"type": "Double"
 								},
 								"sink": {
 									"name": "shipping-price",
