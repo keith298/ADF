@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"name": "Parquet1",
-					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'parquet') ~>  Parquet1",
+					"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'parquet') ~> Parquet1",
 					"dataset": {
 						"referenceName": "Parquet1",
 						"type": "DatasetReference"
