@@ -1,0 +1,281 @@
+{
+	"name": "weeklySales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Output",
+				"fileSystem": "adf"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "order-id",
+				"type": "UTF8"
+			},
+			{
+				"name": "order-item-id",
+				"type": "UTF8"
+			},
+			{
+				"name": "purchase-date",
+				"type": "UTF8"
+			},
+			{
+				"name": "payments-date",
+				"type": "UTF8"
+			},
+			{
+				"name": "buyer-email",
+				"type": "UTF8"
+			},
+			{
+				"name": "buyer-name",
+				"type": "UTF8"
+			},
+			{
+				"name": "payment-method-details",
+				"type": "UTF8"
+			},
+			{
+				"name": "buyer-phone-number",
+				"type": "UTF8"
+			},
+			{
+				"name": "sku",
+				"type": "UTF8"
+			},
+			{
+				"name": "number-of-items",
+				"type": "UTF8"
+			},
+			{
+				"name": "product-name",
+				"type": "UTF8"
+			},
+			{
+				"name": "quantity-purchased",
+				"type": "UTF8"
+			},
+			{
+				"name": "currency",
+				"type": "UTF8"
+			},
+			{
+				"name": "item-price",
+				"type": "UTF8"
+			},
+			{
+				"name": "item-tax",
+				"type": "UTF8"
+			},
+			{
+				"name": "shipping-price",
+				"type": "UTF8"
+			},
+			{
+				"name": "shipping-tax",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-service-level",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-service-name",
+				"type": "UTF8"
+			},
+			{
+				"name": "recipient-name",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-address-1",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-address-2",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-address-3",
+				"type": "UTF8"
+			},
+			{
+				"name": "address-type",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-city",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-state",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-postal-code",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-country",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-phone-number",
+				"type": "UTF8"
+			},
+			{
+				"name": "item-promotion-discount",
+				"type": "UTF8"
+			},
+			{
+				"name": "item-promotion-id",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-promotion-discount",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship-promotion-id",
+				"type": "UTF8"
+			},
+			{
+				"name": "delivery-start-date",
+				"type": "UTF8"
+			},
+			{
+				"name": "delivery-end-date",
+				"type": "UTF8"
+			},
+			{
+				"name": "delivery-time-zone",
+				"type": "UTF8"
+			},
+			{
+				"name": "delivery-Instructions",
+				"type": "UTF8"
+			},
+			{
+				"name": "order-channel",
+				"type": "UTF8"
+			},
+			{
+				"name": "order-channel-instance",
+				"type": "UTF8"
+			},
+			{
+				"name": "external-order-id",
+				"type": "UTF8"
+			},
+			{
+				"name": "payment-method",
+				"type": "UTF8"
+			},
+			{
+				"name": "cod-collectible-amount",
+				"type": "UTF8"
+			},
+			{
+				"name": "already-paid",
+				"type": "UTF8"
+			},
+			{
+				"name": "payment-method-fee",
+				"type": "UTF8"
+			},
+			{
+				"name": "purchase-order-number",
+				"type": "UTF8"
+			},
+			{
+				"name": "is-prime",
+				"type": "UTF8"
+			},
+			{
+				"name": "is-premium-order",
+				"type": "UTF8"
+			},
+			{
+				"name": "tax-collection-model",
+				"type": "UTF8"
+			},
+			{
+				"name": "tax-collection-responsible-party",
+				"type": "UTF8"
+			},
+			{
+				"name": "default-ship-from-address-name",
+				"type": "UTF8"
+			},
+			{
+				"name": "default-ship-from-address-field-1",
+				"type": "UTF8"
+			},
+			{
+				"name": "default-ship-from-address-field-2",
+				"type": "UTF8"
+			},
+			{
+				"name": "default-ship-from-address-field-3",
+				"type": "UTF8"
+			},
+			{
+				"name": "default-ship-from-city",
+				"type": "UTF8"
+			},
+			{
+				"name": "default-ship-from-state",
+				"type": "UTF8"
+			},
+			{
+				"name": "default-ship-from-country",
+				"type": "UTF8"
+			},
+			{
+				"name": "default-ship-from-postal-code",
+				"type": "UTF8"
+			},
+			{
+				"name": "actual-ship-from-address-name",
+				"type": "UTF8"
+			},
+			{
+				"name": "actual-ship-from-address-field-1",
+				"type": "UTF8"
+			},
+			{
+				"name": "actual-ship-from-address-field-2",
+				"type": "UTF8"
+			},
+			{
+				"name": "actual-ship-from-address-field-3",
+				"type": "UTF8"
+			},
+			{
+				"name": "actual-ship-from-city",
+				"type": "UTF8"
+			},
+			{
+				"name": "actual-ship-from-state",
+				"type": "UTF8"
+			},
+			{
+				"name": "actual-ship-from-country",
+				"type": "UTF8"
+			},
+			{
+				"name": "actual-ship-from-postal-code",
+				"type": "UTF8"
+			}
+		]
+	}
+}
