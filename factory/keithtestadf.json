@@ -1,0 +1,9 @@
+{
+	"name": "keithtestadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a672f536-38b8-4bf1-aef2-49bd6aac575a",
+		"tenantId": "513294a0-3e20-41b2-a970-6d30bf1546fa"
+	}
+}
