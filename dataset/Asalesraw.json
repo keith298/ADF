@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "33986152263018872.txt",
-				"folderPath": "Input",
+				"folderPath": "Input/AMZ-US",
 				"fileSystem": "adf"
 			},
 			"columnDelimiter": "\t",
