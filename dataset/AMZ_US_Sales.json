@@ -1,0 +1,29 @@
+{
+	"name": "AMZ_US_Sales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "33986152263018872.txt",
+				"folderPath": "Input/AMZ-US",
+				"fileSystem": "adf"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "order-id\torder-item-id\tpurchase-date\tpayments-date\tbuyer-email\tbuyer-name\tpayment-method-details\tbuyer-phone-number\tsku\tnumber-of-items\tproduct-name\tquantity-purchased\tcurrency\titem-price\titem-tax\tshipping-price\tshipping-tax\tship-service-level\tship-service-name\trecipient-name\tship-address-1\tship-address-2\tship-address-3\taddress-type\tship-city\tship-state\tship-postal-code\tship-country\tship-phone-number\titem-promotion-discount\titem-promotion-id\tship-promotion-discount\tship-promotion-id\tdelivery-start-date\tdelivery-end-date\tdelivery-time-zone\tdelivery-Instructions\torder-channel\torder-channel-instance\texternal-order-id\tpayment-method\tcod-collectible-amount\talready-paid\tpayment-method-fee\tpurchase-order-number\tis-prime\tis-premium-order\ttax-collection-model\ttax-collection-responsible-party\tdefault-ship-from-address-name\tdefault-ship-from-address-field-1\tdefault-ship-from-address-field-2\tdefault-ship-from-address-field-3\tdefault-ship-from-city\tdefault-ship-from-state\tdefault-ship-from-country\tdefault-ship-from-postal-code\tactual-ship-from-address-name\tactual-ship-from-address-field-1\tactual-ship-from-address-field-2\tactual-ship-from-address-field-3\tactual-ship-from-city\tactual-ship-from-state\tactual-ship-from-country\tactual-ship-from-postal-code",
+				"type": "String"
+			}
+		]
+	}
+}
