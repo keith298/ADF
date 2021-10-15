@@ -21,7 +21,263 @@
 		},
 		"schema": [
 			{
-				"name": "order-id\torder-item-id\tpurchase-date\tpayments-date\tbuyer-email\tbuyer-name\tpayment-method-details\tbuyer-phone-number\tsku\tnumber-of-items\tproduct-name\tquantity-purchased\tcurrency\titem-price\titem-tax\tshipping-price\tshipping-tax\tship-service-level\tship-service-name\trecipient-name\tship-address-1\tship-address-2\tship-address-3\taddress-type\tship-city\tship-state\tship-postal-code\tship-country\tship-phone-number\titem-promotion-discount\titem-promotion-id\tship-promotion-discount\tship-promotion-id\tdelivery-start-date\tdelivery-end-date\tdelivery-time-zone\tdelivery-Instructions\torder-channel\torder-channel-instance\texternal-order-id\tpayment-method\tcod-collectible-amount\talready-paid\tpayment-method-fee\tpurchase-order-number\tis-prime\tis-premium-order\ttax-collection-model\ttax-collection-responsible-party\tdefault-ship-from-address-name\tdefault-ship-from-address-field-1\tdefault-ship-from-address-field-2\tdefault-ship-from-address-field-3\tdefault-ship-from-city\tdefault-ship-from-state\tdefault-ship-from-country\tdefault-ship-from-postal-code\tactual-ship-from-address-name\tactual-ship-from-address-field-1\tactual-ship-from-address-field-2\tactual-ship-from-address-field-3\tactual-ship-from-city\tactual-ship-from-state\tactual-ship-from-country\tactual-ship-from-postal-code",
+				"name": "order-id",
+				"type": "String"
+			},
+			{
+				"name": "order-item-id",
+				"type": "String"
+			},
+			{
+				"name": "purchase-date",
+				"type": "String"
+			},
+			{
+				"name": "payments-date",
+				"type": "String"
+			},
+			{
+				"name": "buyer-email",
+				"type": "String"
+			},
+			{
+				"name": "buyer-name",
+				"type": "String"
+			},
+			{
+				"name": "payment-method-details",
+				"type": "String"
+			},
+			{
+				"name": "buyer-phone-number",
+				"type": "String"
+			},
+			{
+				"name": "sku",
+				"type": "String"
+			},
+			{
+				"name": "number-of-items",
+				"type": "String"
+			},
+			{
+				"name": "product-name",
+				"type": "String"
+			},
+			{
+				"name": "quantity-purchased",
+				"type": "String"
+			},
+			{
+				"name": "currency",
+				"type": "String"
+			},
+			{
+				"name": "item-price",
+				"type": "String"
+			},
+			{
+				"name": "item-tax",
+				"type": "String"
+			},
+			{
+				"name": "shipping-price",
+				"type": "String"
+			},
+			{
+				"name": "shipping-tax",
+				"type": "String"
+			},
+			{
+				"name": "ship-service-level",
+				"type": "String"
+			},
+			{
+				"name": "ship-service-name",
+				"type": "String"
+			},
+			{
+				"name": "recipient-name",
+				"type": "String"
+			},
+			{
+				"name": "ship-address-1",
+				"type": "String"
+			},
+			{
+				"name": "ship-address-2",
+				"type": "String"
+			},
+			{
+				"name": "ship-address-3",
+				"type": "String"
+			},
+			{
+				"name": "address-type",
+				"type": "String"
+			},
+			{
+				"name": "ship-city",
+				"type": "String"
+			},
+			{
+				"name": "ship-state",
+				"type": "String"
+			},
+			{
+				"name": "ship-postal-code",
+				"type": "String"
+			},
+			{
+				"name": "ship-country",
+				"type": "String"
+			},
+			{
+				"name": "ship-phone-number",
+				"type": "String"
+			},
+			{
+				"name": "item-promotion-discount",
+				"type": "String"
+			},
+			{
+				"name": "item-promotion-id",
+				"type": "String"
+			},
+			{
+				"name": "ship-promotion-discount",
+				"type": "String"
+			},
+			{
+				"name": "ship-promotion-id",
+				"type": "String"
+			},
+			{
+				"name": "delivery-start-date",
+				"type": "String"
+			},
+			{
+				"name": "delivery-end-date",
+				"type": "String"
+			},
+			{
+				"name": "delivery-time-zone",
+				"type": "String"
+			},
+			{
+				"name": "delivery-Instructions",
+				"type": "String"
+			},
+			{
+				"name": "order-channel",
+				"type": "String"
+			},
+			{
+				"name": "order-channel-instance",
+				"type": "String"
+			},
+			{
+				"name": "external-order-id",
+				"type": "String"
+			},
+			{
+				"name": "payment-method",
+				"type": "String"
+			},
+			{
+				"name": "cod-collectible-amount",
+				"type": "String"
+			},
+			{
+				"name": "already-paid",
+				"type": "String"
+			},
+			{
+				"name": "payment-method-fee",
+				"type": "String"
+			},
+			{
+				"name": "purchase-order-number",
+				"type": "String"
+			},
+			{
+				"name": "is-prime",
+				"type": "String"
+			},
+			{
+				"name": "is-premium-order",
+				"type": "String"
+			},
+			{
+				"name": "tax-collection-model",
+				"type": "String"
+			},
+			{
+				"name": "tax-collection-responsible-party",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-address-name",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-address-field-1",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-address-field-2",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-address-field-3",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-city",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-state",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-country",
+				"type": "String"
+			},
+			{
+				"name": "default-ship-from-postal-code",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-address-name",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-address-field-1",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-address-field-2",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-address-field-3",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-city",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-state",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-country",
+				"type": "String"
+			},
+			{
+				"name": "actual-ship-from-postal-code",
 				"type": "String"
 			}
 		]
