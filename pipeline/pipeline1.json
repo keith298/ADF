@@ -208,7 +208,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Asalesraw",
+						"referenceName": "AMZ_US_Sales",
 						"type": "DatasetReference"
 					}
 				],
